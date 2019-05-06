@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Nikita Sherstnyov">
+	<title>Miami fight</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+	 <div id="gameZone">
+		    <div id="titleGame">MIAMI FIGHT</div>
+		    <div id="introduction">
+			<p id="nameRequire">Введите ваше имя</p>
+			<input type="text" id="playerName"><br>
+			<input type="button" id="playerNameButton" onclick="checkEmptyName();" value="Ввести">
+			</div>
+ 
+	        <div id="player">
+	     	<h3><span id="playerNameEnter">---</span></h3>
+	     	<img src="img/Player.jpg" alt="Тут должно быть ваше фото" id="imgPlayer">
+	     	<h4>Здоровье: <span id="player-health"></span><h4>
+	     	<h4>Сила: <span id="player-power"></span><h4>
+	   		<h4>Ловкость: <span id="player-agility"></span><h4>
+	        </div>
+
+	        <div id="opponent">
+	        <h3>Противник</h3>
+	        <img src="img/Tony.jpg" id="imgOpponent" alt="Тони" id="imgOpponent">
+            <h4>Здоровье: <span id="opponent-health"></span></h4>
+            <h4>Сила: <span id="opponent-power"></span><h4>
+	   	    <h4>Ловкость: <span id="opponent-agility"></span><h4>
+            </div>
+
+		    <br>
+		    <h3><span id="round">Раунд 1</span></h3>
+
+            <button id="attack-button" disabled="true" onclick="attack();">Удар</button>
+            <button id="protect-button" disabled="true" onclick="protect();">Блок</button>
+            <button id="next-opponent-button" hidden="true" onclick="nextOpponent();">Следующий противник</button>
+            <button id="restart-button" hidden="true" onclick="restart();">Заново</button>
+            <h3 id="game-message">...</h3>
+     </div>
+	</body>
+    <input type="submit" id="agilityButton" onclick="decreaseAgility();"/>
+	<script src="script.js"></script>
+</html>

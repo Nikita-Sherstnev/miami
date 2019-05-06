@@ -1,0 +1,123 @@
+body {
+	background-color: #BF1D1D;
+	font-family: "RobotoSlab-Regular";
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#titleGame {
+	font-family: "Beyond";
+	font-size: 48px;
+	padding: 10px 0px 10px 0px;
+}
+
+#imgPlayer {
+	position: relative;
+}
+
+#imgOpponent {
+	position: relative;
+}
+
+#agilityButton {
+       position: absolute;
+	   height: 100px;
+	   width: 100px;
+	   background: transparent;
+       border: none !important;
+       font-size: 0;
+}
+
+#gameZone {
+	text-align: center;
+	background-color: white;
+	width: 560px;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+#introduction {
+	text-align: center;
+	padding: 5px;
+}
+
+#introduction p {
+	font-size: 27px;
+	margin: 0;
+}
+
+#playerName {
+	width: 200px;
+}
+
+#playerNameButton {
+	width: 204px;
+}
+
+#player {
+	display: inline-block; 
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 0px 4px;
+	margin: 2px 0px 0px 4px;
+	width: 260px;
+}
+
+#opponent {
+	display: inline-block;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 0px 4px;
+	margin: 2px 0px;
+	width: 260px;
+}
+
+#attack-button, #restart-button, #next-opponent-button, #protect-button {
+	border: 1px solid #C9AE34;
+	color: #705D07;
+	border-radius: 3px 3px 3px 3px;
+	font-family: "RobotoSlab-Regular";
+	width: auto;
+	height: auto;
+	font-size: 16px;
+	padding: 10px 40px;
+	box-shadow: inset 0 1px 0 0 #FFF6CE, inset 0 -1px 0 0 #E3C852, inset 0 0 0 1px #FCE88D, 0 2px 4px 0 #D4D4D4;
+	text-shadow: 0 1px 0 #FFFFFF;
+	background-image: linear-gradient(to top, #FCE374, #FCDF5B);
+	background-color: #FCE374;
+}
+
+#attack-button:hover, #attack-button:active, 
+#restart-button:hover, #restart-button:active, 
+#next-opponent-button:hover, #next-opponent-button:active, 
+#protect-button:hover, #protect-button:active {
+	border: 1px solid #967D09;
+	color: #705D07;
+	box-shadow: inset 0 1px 0 0 #FFF6CE, inset 0 -1px 0 0 #E3C852, inset 0 0 0 1px #FCE88D;
+	background-color: #FCDF5B;
+}
+
+@font-face {
+	font-family: "RobotoSlab-Regular";
+	src: url("fonts/RobotoSlab/RobotoSlab-Regular.eot"); 
+	src: url("fonts/RobotoSlab/RobotoSlab-Regular?#iefix") format("embedded-opentype"),
+	url("fonts/RobotoSlab/RobotoSlab-Regular.woff") format("woff"), 
+	url("fonts/RobotoSlab/RobotoSlab-Regular.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "Beyond";
+	src: url("fonts/Beyond/Beyond.eot"); 
+	src: url("fonts/Beyond/Beyond?#iefix") format("embedded-opentype"),
+	url("fonts/Beyond/Beyond.woff") format("woff"), 
+	url("fonts/Beyond/Beyond.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
